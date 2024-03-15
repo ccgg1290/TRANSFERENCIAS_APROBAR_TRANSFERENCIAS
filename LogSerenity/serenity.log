@@ -1,0 +1,251 @@
+22:24:31.497 [LUCY] INFO   - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+22:24:31.509 [LUCY] INFO   - Test Suite Started: Yo como cliente corporativo quiero aprobar una transferencia
+22:24:31.646 [LUCY] INFO   - Test Suite Started: Yo como cliente corporativo quiero aprobar una transferencia
+22:24:31.906 [LUCY] INFO   - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+DescargarArchivo(yo-como-cliente-corporativo-quiero-aprobar-una-transferencia;descargararchivo)
+--------------------------------------------------------------------------------
+22:24:31.932 [LUCY] INFO   - |-- 1: DescargarArchivo ({TipoTransferencias=Transferencias Entre Cuentas Propias, NumeroProcesoValidar=, Paginas=2-3, NumeroProcesoBuscar=2853-2826, ProductoOrigen=--SELECCIONE EL PRODUCTO--, FechaCreacionEntre=01/03/2024, FechaCreacionHasta=12/03/2024, Creador=-- SELECCIONE --, ProductoDestino=--SELECCIONE EL PRODUCTO--, ListaPaginas=, TotalTransferencias=46, Transferencias Seleccionadas=1, TipoDeArchivo=EXCEL})
+22:24:32.059 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** INICIO LOGIN ******
+22:24:32.485 [LUCY] INFO   - |---- Cliente Corporativo opens the Login page
+22:24:42.640 [LUCY] INFO   - |---- -------------- Before the test--------------
+22:24:42.792 [LUCY] INFO   - |------ Cliente Corporativo refreshes the browser
+22:24:44.734 [LUCY] INFO   - |------ Cliente Corporativo enters '23534' into Cliente Empresarial
+22:24:44.938 [LUCY] INFO   - |------ Cliente Corporativo selects Cédula de Ciudadanía on Tipo de identificacion
+22:24:45.364 [LUCY] INFO   - |------ Cliente Corporativo enters '1014224787' into Numero de identificacion
+22:24:45.480 [LUCY] INFO   - |------ Cliente Corporativo enters '976431' into Clave personal
+22:24:45.599 [LUCY] INFO   - |------ Cliente Corporativo enters '123456789' into Clave token
+22:24:45.711 [LUCY] INFO   - |------ Cliente Corporativo clicks on button ingresar
+22:24:47.167 [LUCY] INFO   - |------ Cliente Corporativo switches to new window
+22:24:47.227 [LUCY] INFO   - |------ Cliente corporativo home page task
+22:24:47.238 [LUCY] INFO   - |-------- Cliente Corporativo refreshes the browser
+22:24:53.595 [LUCY] INFO   - |-------- Cliente Corporativo selects FALABELLA DE COLOMBIA S.A on Lista de bancos
+22:24:54.035 [LUCY] INFO   - |------ Then El nombre en el Home page  should be 'camilo3'
+22:24:54.088 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** FIN LOGIN ******
+22:24:54.094 [LUCY] INFO   - |---- Given El cliente se encuentra en el submodulo Transferencias_AprobarTransferencias
+22:25:02.988 [LUCY] INFO   - |------ Cliente Corporativo clicks on Transferencias
+22:25:10.048 [LUCY] INFO   - |------ Cliente Corporativo clicks on Aprobar Transferencias
+22:25:15.687 [LUCY] INFO   - |------ Then El titulo  should be 'Aprobar Procesos de Transferencias'
+22:25:15.736 [LUCY] INFO   - |---- When Consulta las transferencias que desea aprobar
+| TipoTransferencias | NumeroProcesoValidar | Paginas | NumeroProcesoBuscar | ProductoOrigen | FechaCreacionEntre | FechaCreacionHasta | Creador | ProductoDestino | ListaPaginas | TotalTransferencias | Transferencias Seleccionadas |
+| Transferencias Entre Cuentas Propias |  | 2-3 | 2853-2826 | --SELECCIONE EL PRODUCTO-- | 01/03/2024 | 12/03/2024 | -- SELECCIONE -- | --SELECCIONE EL PRODUCTO-- |  | 46 | 1 |
+22:25:15.802 [LUCY] INFO   - |------ Cliente Corporativo enters '01/03/2024' into Fecha entre
+22:25:15.919 [LUCY] INFO   - |------ Cliente Corporativo enters '12/03/2024' into Fecha hasta
+22:25:16.032 [LUCY] INFO   - |------ Cliente Corporativo selects Transferencias Entre Cuentas Propias on Tipo transferencia
+22:25:16.383 [LUCY] INFO   - |------ Cliente Corporativo enters '' into Numero proceso
+22:25:16.481 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista producto origen
+22:25:16.576 [LUCY] INFO   - |------ Cliente Corporativo selects -- SELECCIONE -- on lista creador
+22:25:16.672 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista productodestino
+22:25:26.850 [LUCY] INFO   - |------ Cliente Corporativo clicks on Buscar proceso
+22:25:28.797 [LUCY] INFO  c.c.b.T.A.Definitions.Definitions - chekeamos la fila con id2853
+22:25:33.839 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkSiguiente]
+22:25:39.245 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.xpath: //td[contains(text(), 2853)]//..//span//input]
+22:25:39.505 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkAnterior]
+22:25:44.778 [LUCY] INFO  c.c.b.T.A.Definitions.Definitions - chekeamos la fila con id2826
+22:25:49.802 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkSiguiente]
+22:25:55.108 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkSiguiente]
+22:26:00.555 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.xpath: //td[contains(text(), 2826)]//..//span//input]
+22:26:00.831 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkAnterior]
+22:26:06.113 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkAnterior]
+22:26:16.460 [LUCY] INFO   - |---- Then Descarga el archivo
+| TipoDeArchivo | NumeroProcesoBuscar |
+| EXCEL | 2853-2826 |
+22:26:16.574 [LUCY] INFO   - |------ Cliente Corporativo clicks on Boton descargar excel
+22:26:21.881 [LUCY] INFO  c.c.b.T.A.utils.ReturnDate - 2024031422
+22:26:21.881 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo construido 2024031422
+22:26:21.885 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo a mover: 20240314220011.xlsx
+22:26:21.885 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo origen: C:\Users\ccgualterosg\\Downloads\\20240314220011.xlsx
+22:26:21.886 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo destino: C:\Users\ccgualterosg\Documents\proyecto_Automatizacion\proyectos\Transferencias\AprobarTransferencias\\src\\test\\resources\\archivos\\20240314220011.xlsx
+22:26:21.898 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo a mover: 20240314220136.xlsx
+22:26:21.899 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo origen: C:\Users\ccgualterosg\\Downloads\\20240314220136.xlsx
+22:26:21.899 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo destino: C:\Users\ccgualterosg\Documents\proyecto_Automatizacion\proyectos\Transferencias\AprobarTransferencias\\src\\test\\resources\\archivos\\20240314220136.xlsx
+22:26:21.906 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo a mover: 20240314222617.xlsx
+22:26:21.906 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo origen: C:\Users\ccgualterosg\\Downloads\\20240314222617.xlsx
+22:26:21.906 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo destino: C:\Users\ccgualterosg\Documents\proyecto_Automatizacion\proyectos\Transferencias\AprobarTransferencias\\src\\test\\resources\\archivos\\20240314222617.xlsx
+22:26:21.914 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314220011.xlsx
+22:26:21.914 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314220136.xlsx
+22:26:21.914 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314222617.xlsx
+22:26:21.914 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Numero de archivos presente = 3
+22:26:21.917 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314220011.xlsx
+22:26:21.917 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314220136.xlsx
+22:26:21.917 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314222617.xlsx
+22:26:21.918 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Numero de archivos retornados= 3
+22:26:23.666 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:26:23.708 [LUCY] INFO   - |------ Cliente Corporativo should see a value that is equal to: <true>
+22:26:23.799 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:26:23.799 [LUCY] INFO  c.c.b.T.A.utils.ReturnDate - 2024031422
+22:26:23.799 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo construido 2024031422
+22:26:23.801 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314220011.xlsx
+22:26:23.801 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314220136.xlsx
+22:26:23.801 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314222617.xlsx
+22:26:23.801 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Numero de archivos presente = 3
+22:26:23.802 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314220011.xlsx
+22:26:23.802 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314220136.xlsx
+22:26:23.802 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314222617.xlsx
+22:26:23.802 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Numero de archivos retornados= 3
+22:26:23.893 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:26:23.897 [LUCY] INFO   - |------ Cliente Corporativo should see a value that is equal to: <true>
+22:26:23.978 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:26:26.764 [LUCY] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Descargar archivo
+----------------------------------------------------------------------
+22:26:26.793 [LUCY] INFO   - |-- 2: DescargarArchivo ({TipoTransferencias=Transferencias Entre Cuentas Propias, NumeroProcesoValidar=, Paginas=1-1, NumeroProcesoBuscar=2891-2883, ProductoOrigen=--SELECCIONE EL PRODUCTO--, FechaCreacionEntre=01/03/2024, FechaCreacionHasta=12/03/2024, Creador=-- SELECCIONE --, ProductoDestino=--SELECCIONE EL PRODUCTO--, ListaPaginas=, TotalTransferencias=46, Transferencias Seleccionadas=1, TipoDeArchivo=EXCEL})
+22:26:26.797 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - 
+ nombre de archivo: 20240314220011.xlsx
+22:26:26.801 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - Se ha eliminado el archivo exitosamente
+22:26:26.801 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - 
+ nombre de archivo: 20240314220136.xlsx
+22:26:26.804 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - Se ha eliminado el archivo exitosamente
+22:26:26.804 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - 
+ nombre de archivo: 20240314222617.xlsx
+22:26:26.808 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - Se ha eliminado el archivo exitosamente
+22:26:26.808 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** INICIO LOGIN ******
+22:26:26.825 [LUCY] INFO   - |---- Cliente Corporativo opens the Login page
+22:26:35.716 [LUCY] INFO   - |---- -------------- Before the test--------------
+22:26:35.745 [LUCY] INFO   - |------ Cliente Corporativo refreshes the browser
+22:26:37.548 [LUCY] INFO   - |------ Cliente Corporativo enters '23534' into Cliente Empresarial
+22:26:37.644 [LUCY] INFO   - |------ Cliente Corporativo selects Cédula de Ciudadanía on Tipo de identificacion
+22:26:37.962 [LUCY] INFO   - |------ Cliente Corporativo enters '1014224787' into Numero de identificacion
+22:26:38.034 [LUCY] INFO   - |------ Cliente Corporativo enters '976431' into Clave personal
+22:26:38.111 [LUCY] INFO   - |------ Cliente Corporativo enters '123456789' into Clave token
+22:26:38.196 [LUCY] INFO   - |------ Cliente Corporativo clicks on button ingresar
+22:26:39.595 [LUCY] INFO   - |------ Cliente Corporativo switches to new window
+22:26:39.643 [LUCY] INFO   - |------ Cliente corporativo home page task
+22:26:39.651 [LUCY] INFO   - |-------- Cliente Corporativo refreshes the browser
+22:26:45.789 [LUCY] INFO   - |-------- Cliente Corporativo selects FALABELLA DE COLOMBIA S.A on Lista de bancos
+22:26:46.065 [LUCY] INFO   - |------ Then El nombre en el Home page  should be 'camilo3'
+22:26:46.099 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** FIN LOGIN ******
+22:26:46.101 [LUCY] INFO   - |---- Given El cliente se encuentra en el submodulo Transferencias_AprobarTransferencias
+22:26:55.250 [LUCY] INFO   - |------ Cliente Corporativo clicks on Transferencias
+22:27:02.399 [LUCY] INFO   - |------ Cliente Corporativo clicks on Aprobar Transferencias
+22:27:08.497 [LUCY] INFO   - |------ Then El titulo  should be 'Aprobar Procesos de Transferencias'
+22:27:08.532 [LUCY] INFO   - |---- When Consulta las transferencias que desea aprobar
+| TipoTransferencias | NumeroProcesoValidar | Paginas | NumeroProcesoBuscar | ProductoOrigen | FechaCreacionEntre | FechaCreacionHasta | Creador | ProductoDestino | ListaPaginas | TotalTransferencias | Transferencias Seleccionadas |
+| Transferencias Entre Cuentas Propias |  | 1-1 | 2891-2883 | --SELECCIONE EL PRODUCTO-- | 01/03/2024 | 12/03/2024 | -- SELECCIONE -- | --SELECCIONE EL PRODUCTO-- |  | 46 | 1 |
+22:27:08.587 [LUCY] INFO   - |------ Cliente Corporativo enters '01/03/2024' into Fecha entre
+22:27:08.693 [LUCY] INFO   - |------ Cliente Corporativo enters '12/03/2024' into Fecha hasta
+22:27:08.774 [LUCY] INFO   - |------ Cliente Corporativo selects Transferencias Entre Cuentas Propias on Tipo transferencia
+22:27:09.088 [LUCY] INFO   - |------ Cliente Corporativo enters '' into Numero proceso
+22:27:09.155 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista producto origen
+22:27:09.239 [LUCY] INFO   - |------ Cliente Corporativo selects -- SELECCIONE -- on lista creador
+22:27:09.326 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista productodestino
+22:27:19.439 [LUCY] INFO   - |------ Cliente Corporativo clicks on Buscar proceso
+22:27:21.527 [LUCY] INFO  c.c.b.T.A.Definitions.Definitions - chekeamos la fila con id2891
+22:27:26.597 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.xpath: //td[contains(text(), 2891)]//..//span//input]
+22:27:26.876 [LUCY] INFO  c.c.b.T.A.Definitions.Definitions - chekeamos la fila con id2883
+22:27:31.976 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.xpath: //td[contains(text(), 2883)]//..//span//input]
+22:27:37.397 [LUCY] INFO   - |---- Then Descarga el archivo
+| TipoDeArchivo | NumeroProcesoBuscar |
+| EXCEL | 2891-2883 |
+22:27:37.442 [LUCY] INFO   - |------ Cliente Corporativo clicks on Boton descargar excel
+22:27:42.751 [LUCY] INFO  c.c.b.T.A.utils.ReturnDate - 2024031422
+22:27:42.751 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo construido 2024031422
+22:27:42.752 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo a mover: 20240314222738.xlsx
+22:27:42.753 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo origen: C:\Users\ccgualterosg\\Downloads\\20240314222738.xlsx
+22:27:42.753 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo destino: C:\Users\ccgualterosg\Documents\proyecto_Automatizacion\proyectos\Transferencias\AprobarTransferencias\\src\\test\\resources\\archivos\\20240314222738.xlsx
+22:27:42.757 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314222738.xlsx
+22:27:42.757 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Numero de archivos presente = 1
+22:27:42.758 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314222738.xlsx
+22:27:42.758 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Numero de archivos retornados= 1
+22:27:42.835 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:27:42.839 [LUCY] INFO   - |------ Cliente Corporativo should see a value that is equal to: <true>
+22:27:42.894 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:27:42.895 [LUCY] INFO  c.c.b.T.A.utils.ReturnDate - 2024031422
+22:27:42.895 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo construido 2024031422
+22:27:42.897 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314222738.xlsx
+22:27:42.897 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Numero de archivos presente = 1
+22:27:42.897 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314222738.xlsx
+22:27:42.897 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Numero de archivos retornados= 1
+22:27:42.954 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:27:42.959 [LUCY] INFO   - |------ Cliente Corporativo should see a value that is equal to: <true>
+22:27:43.013 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:27:45.674 [LUCY] INFO   - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Descargar archivo
+----------------------------------------------------------------------
+22:27:45.696 [LUCY] INFO   - |-- 3: DescargarArchivo ({TipoTransferencias=Transferencias Entre Cuentas Propias, NumeroProcesoValidar=, Paginas=3, NumeroProcesoBuscar=2826, ProductoOrigen=--SELECCIONE EL PRODUCTO--, FechaCreacionEntre=01/03/2024, FechaCreacionHasta=12/03/2024, Creador=-- SELECCIONE --, ProductoDestino=--SELECCIONE EL PRODUCTO--, ListaPaginas=, TotalTransferencias=46, Transferencias Seleccionadas=1, TipoDeArchivo=EXCEL})
+22:27:45.699 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - 
+ nombre de archivo: 20240314222738.xlsx
+22:27:45.702 [LUCY] INFO  c.c.b.T.A.utils.DeleteFiles - Se ha eliminado el archivo exitosamente
+22:27:45.702 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** INICIO LOGIN ******
+22:27:45.721 [LUCY] INFO   - |---- Cliente Corporativo opens the Login page
+22:27:54.267 [LUCY] INFO   - |---- -------------- Before the test--------------
+22:27:54.300 [LUCY] INFO   - |------ Cliente Corporativo refreshes the browser
+22:27:56.071 [LUCY] INFO   - |------ Cliente Corporativo enters '23534' into Cliente Empresarial
+22:27:56.165 [LUCY] INFO   - |------ Cliente Corporativo selects Cédula de Ciudadanía on Tipo de identificacion
+22:27:56.474 [LUCY] INFO   - |------ Cliente Corporativo enters '1014224787' into Numero de identificacion
+22:27:56.552 [LUCY] INFO   - |------ Cliente Corporativo enters '976431' into Clave personal
+22:27:56.620 [LUCY] INFO   - |------ Cliente Corporativo enters '123456789' into Clave token
+22:27:56.695 [LUCY] INFO   - |------ Cliente Corporativo clicks on button ingresar
+22:27:58.181 [LUCY] INFO   - |------ Cliente Corporativo switches to new window
+22:27:58.214 [LUCY] INFO   - |------ Cliente corporativo home page task
+22:27:58.222 [LUCY] INFO   - |-------- Cliente Corporativo refreshes the browser
+22:28:04.717 [LUCY] INFO   - |-------- Cliente Corporativo selects FALABELLA DE COLOMBIA S.A on Lista de bancos
+22:28:05.006 [LUCY] INFO   - |------ Then El nombre en el Home page  should be 'camilo3'
+22:28:05.037 [LUCY] INFO  c.c.b.T.A.Hooks.Hook - ****** FIN LOGIN ******
+22:28:05.039 [LUCY] INFO   - |---- Given El cliente se encuentra en el submodulo Transferencias_AprobarTransferencias
+22:28:13.639 [LUCY] INFO   - |------ Cliente Corporativo clicks on Transferencias
+22:28:20.711 [LUCY] INFO   - |------ Cliente Corporativo clicks on Aprobar Transferencias
+22:28:26.996 [LUCY] INFO   - |------ Then El titulo  should be 'Aprobar Procesos de Transferencias'
+22:28:27.043 [LUCY] INFO   - |---- When Consulta las transferencias que desea aprobar
+| TipoTransferencias | NumeroProcesoValidar | Paginas | NumeroProcesoBuscar | ProductoOrigen | FechaCreacionEntre | FechaCreacionHasta | Creador | ProductoDestino | ListaPaginas | TotalTransferencias | Transferencias Seleccionadas |
+| Transferencias Entre Cuentas Propias |  | 3 | 2826 | --SELECCIONE EL PRODUCTO-- | 01/03/2024 | 12/03/2024 | -- SELECCIONE -- | --SELECCIONE EL PRODUCTO-- |  | 46 | 1 |
+22:28:27.101 [LUCY] INFO   - |------ Cliente Corporativo enters '01/03/2024' into Fecha entre
+22:28:27.217 [LUCY] INFO   - |------ Cliente Corporativo enters '12/03/2024' into Fecha hasta
+22:28:27.309 [LUCY] INFO   - |------ Cliente Corporativo selects Transferencias Entre Cuentas Propias on Tipo transferencia
+22:28:27.644 [LUCY] INFO   - |------ Cliente Corporativo enters '' into Numero proceso
+22:28:27.728 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista producto origen
+22:28:27.802 [LUCY] INFO   - |------ Cliente Corporativo selects -- SELECCIONE -- on lista creador
+22:28:27.888 [LUCY] INFO   - |------ Cliente Corporativo selects --SELECCIONE EL PRODUCTO-- on Lista productodestino
+22:28:37.997 [LUCY] INFO   - |------ Cliente Corporativo clicks on Buscar proceso
+22:28:40.171 [LUCY] INFO  c.c.b.T.A.Definitions.Definitions - chekeamos la fila con id2826
+22:28:45.191 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkSiguiente]
+22:28:50.486 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkSiguiente]
+22:28:55.861 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.xpath: //td[contains(text(), 2826)]//..//span//input]
+22:28:56.146 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkAnterior]
+22:29:01.412 [LUCY] INFO   - |------ Cliente Corporativo clicks on [By.id: cphCuerpo_lkAnterior]
+22:29:11.720 [LUCY] INFO   - |---- Then Descarga el archivo
+| TipoDeArchivo | NumeroProcesoBuscar |
+| EXCEL | 2826 |
+22:29:11.788 [LUCY] INFO   - |------ Cliente Corporativo clicks on Boton descargar excel
+22:29:17.078 [LUCY] INFO  c.c.b.T.A.utils.ReturnDate - 2024031422
+22:29:17.078 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo construido 2024031422
+22:29:17.079 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - nombre archivo a mover: 20240314222913.xlsx
+22:29:17.080 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo origen: C:\Users\ccgualterosg\\Downloads\\20240314222913.xlsx
+22:29:17.080 [LUCY] INFO  c.c.b.T.A.utils.ManagmedFile - ruta archivo destino: C:\Users\ccgualterosg\Documents\proyecto_Automatizacion\proyectos\Transferencias\AprobarTransferencias\\src\\test\\resources\\archivos\\20240314222913.xlsx
+22:29:17.085 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Nombre archivo presente: 20240314222913.xlsx
+22:29:17.085 [LUCY] INFO  c.c.b.T.A.questions.IsPresentFile - Numero de archivos presente = 1
+22:29:17.085 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Nombre archivo retornado: 20240314222913.xlsx
+22:29:17.085 [LUCY] INFO  c.c.b.T.A.questions.ReturnFiles - Numero de archivos retornados= 1
+22:29:17.166 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
+22:29:17.168 [LUCY] INFO   - |------ Cliente Corporativo should see a value that is equal to: <true>
+22:29:17.223 [LUCY] INFO  c.c.b.T.A.a.FindExcelLecturaTabla - Se leyo el archivo fin
